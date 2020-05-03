@@ -6,9 +6,12 @@ import { APP_ROUTES } from './app.routes';
 
 // Modulos
 import { PagesModule } from './pages/pages.module';
+import { ServiceModule } from './services/service.module';
 
 // Temporal
 import { FormsModule } from '@angular/forms';
+
+// Servicios
 
 // Componentes
 import { AppComponent } from './app.component';
@@ -28,6 +31,7 @@ import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component
     BrowserModule,
     PagesModule, // Modulo personalizado para la seccion de "pages"
     FormsModule,
+    ServiceModule,
     APP_ROUTES
   ],
   providers: [],

@@ -19,6 +19,7 @@ import { ProgressComponent } from './progress/progress.component';
 // Temporal
 import { IncrementsComponent } from '../components/increments/increments.component';
 import { GraphDonutsComponent } from '../components/graph-donuts/graph-donuts.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
     declarations: [
@@ -27,7 +28,8 @@ import { GraphDonutsComponent } from '../components/graph-donuts/graph-donuts.co
         Graficas1Component,
         ProgressComponent,
         IncrementsComponent,
-        GraphDonutsComponent
+        GraphDonutsComponent,
+        AccountSettingsComponent
     ],
     exports: [ // Coloco los componentes que deseo exportar para ser usados en modulos externos al propio
         PagesComponent,

@@ -1,0 +1,5 @@
+export { SharedService } from './shared/shared.service';
+export { SettingsService } from './settings/settings.service';
+export { SidebarService } from './shared/sidebar.service';
+
+// Aqui importo todos mis servicios y los proveo a través de un único fichero (service.index.ts).

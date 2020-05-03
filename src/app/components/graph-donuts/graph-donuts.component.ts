@@ -17,8 +17,6 @@ export class GraphDonutsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.doughnutChartLabels);
-    
   }
 
 }
