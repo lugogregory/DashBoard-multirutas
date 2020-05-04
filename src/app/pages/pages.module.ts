@@ -20,6 +20,8 @@ import { ProgressComponent } from './progress/progress.component';
 import { IncrementsComponent } from '../components/increments/increments.component';
 import { GraphDonutsComponent } from '../components/graph-donuts/graph-donuts.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 @NgModule({
     declarations: [
@@ -29,7 +31,9 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
         ProgressComponent,
         IncrementsComponent,
         GraphDonutsComponent,
-        AccountSettingsComponent
+        AccountSettingsComponent,
+        PromesasComponent,
+        RxjsComponent
     ],
     exports: [ // Coloco los componentes que deseo exportar para ser usados en modulos externos al propio
         PagesComponent,
