@@ -8,10 +8,13 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 
+// Guards
+import { LoginGuardGuard } from '../services/guards/login-guard.guard';
 
 const pagesRoutes: Routes = [
     {
         path: '',
+        canActivate: [LoginGuardGuard],
         component: PagesComponent,
         children: [// Definicion de las rutas hijas.         // Agrego data para capturar la info de la página actual en la MIGA
             { path: 'dashboard', component: DashboardComponent, data: {titulo: 'Dashboard'} },

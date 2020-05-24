@@ -9,7 +9,7 @@ import { PagesModule } from './pages/pages.module';
 import { ServiceModule } from './services/service.module';
 
 // Temporal
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // Servicios
 
@@ -32,6 +32,7 @@ import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component
     PagesModule, // Modulo personalizado para la seccion de "pages"
     FormsModule,
     ServiceModule,
+    ReactiveFormsModule, // Modulo para formularios reactivos
     APP_ROUTES
   ],
   providers: [],
