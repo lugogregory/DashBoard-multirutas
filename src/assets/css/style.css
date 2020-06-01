@@ -92,6 +92,14 @@ body {
     font-weight: 300;
 }
 
+.w-fit {
+    width: fit-content;
+}
+
+.w150 {
+    max-width: 150px;
+}
+
 html {
     position: relative;
     min-height: 100%;

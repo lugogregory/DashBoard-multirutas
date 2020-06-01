@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SidebarService, UsuarioService } from '../../services/service.index';
+import { Usuario } from '../../models/user.model';
 
 
 
@@ -12,8 +13,12 @@ import { SidebarService, UsuarioService } from '../../services/service.index';
 })
 export class SidebarComponent implements OnInit {
 
+  usuario: Usuario;
+
   // Al hacer PUBLIC el servicio, puedo accesarlo desde el HTML
-  constructor(public sideBar: SidebarService, public userService: UsuarioService) { }
+  constructor(public sideBar: SidebarService, public userService: UsuarioService) {
+    this.usuario = userService.usuario;
+  }
 
   ngOnInit(): void {
   }

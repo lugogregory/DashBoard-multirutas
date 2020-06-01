@@ -10,6 +10,9 @@ import { FormsModule } from '@angular/forms';
 // ng2-Chart
 import { ChartsModule } from 'ng2-charts';
 
+// Pipes Module
+import { PipesModule } from '../pipes/pipes.module';
+
 // Componentes
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { Graficas1Component } from './graficas1/graficas1.component';
@@ -22,6 +25,7 @@ import { GraphDonutsComponent } from '../components/graph-donuts/graph-donuts.co
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
     declarations: [
@@ -33,7 +37,8 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         GraphDonutsComponent,
         AccountSettingsComponent,
         PromesasComponent,
-        RxjsComponent
+        RxjsComponent,
+        ProfileComponent
     ],
     exports: [ // Coloco los componentes que deseo exportar para ser usados en modulos externos al propio
         PagesComponent,
@@ -46,6 +51,7 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         FormsModule,
         ChartsModule,
         BrowserModule,
+        PipesModule,
         PAGES_ROUTES // Sistema de rutas hijas para la seccion de PAGES
     ]
 })

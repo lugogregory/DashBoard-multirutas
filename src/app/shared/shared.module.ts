@@ -7,12 +7,15 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 
+// Pipes Module
+import { PipesModule } from '../pipes/pipes.module';
 
 
 @NgModule({
     imports: [
         RouterModule,
-        BrowserModule
+        BrowserModule,
+        PipesModule
     ],
     declarations: [
         HeaderComponent,
